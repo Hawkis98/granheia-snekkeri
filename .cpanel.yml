@@ -2,4 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/granhowq/public_html/
-    - /bin/cp -R . $DEPLOYPATH
+    - export REPOPATH=/home/granhowq/repositories/granheia-snekkeri/
+    - /bin/cp -r $REPOPATH $DEPLOYPATH
